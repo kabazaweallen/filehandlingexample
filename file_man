@@ -1,0 +1,31 @@
+import 'dart:io';
+
+void main() {
+  String input = "Hello, Dart!";
+  
+  // String concatenation
+  String greeting = input + " Welcome to programming.";
+  
+  // String interpolation
+  String interpolated = "The greeting is: $greeting";
+  
+  // Substring extraction
+  String substring = input.substring(0, 5);
+  
+  // Case conversion
+  String upperCase = input.toUpperCase();
+  String lowerCase = input.toLowerCase();
+  
+  // Reverse string
+  String reversed = input.split('').reversed.join();
+  
+  // Count length
+  int length = input.length;
+
+  print(interpolated);
+  print('Substring: $substring');
+  print('Uppercase: $upperCase');
+  print('Lowercase: $lowerCase');
+  print('Reversed: $reversed');
+  print('Length: $length');
+}

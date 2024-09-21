@@ -1,0 +1,19 @@
+import 'dart:io';
+
+void main() async {
+  String filePath = 'input.txt';
+  String outputFilePath = 'output.txt';
+
+  try {
+    // Read content from a file
+    String content = await File(filePath).readAsString();
+    print('Content read from file: $content');
+
+    // Write new data into another file
+    await File(outputFilePath).writeAsString('New Data: $content');
+    print('Data written to $outputFilePath');
+
+  } catch (e) {
+    print('Error: $e');
+  }
+}
